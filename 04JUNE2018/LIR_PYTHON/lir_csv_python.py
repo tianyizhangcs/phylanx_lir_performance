@@ -41,12 +41,13 @@ tlra = time.time()
 
 def MyLinearRegression(x, y, iterations, alpha):
 		w = np.zeros(x.shape[1])
+		error = np.zeros(x.shape[0])
 		Transx = x.transpose()
 		for step in range(iterations):
 				g = np.dot(x, w)
 				error = g - y
-		gradient = np.dot(Transx, error)
-		w = w - alpha * gradient
+				gradient = np.dot(Transx, error)
+				w = w - alpha * gradient
 		return w
 
 
