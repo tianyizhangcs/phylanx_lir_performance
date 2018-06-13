@@ -4,7 +4,7 @@ echo "This script is used to run lir_csv_python example"
 
 
 iteration_array=(1 100 1000 5000 10000)
-row_stop_array=(100 1000 2000)
+row_stop_array=(3000 4000 5000 6000)
 thr=(1 2 4 6 8 10 12 14 16 18 20)
 
 #iteration_array=(1 1000)
