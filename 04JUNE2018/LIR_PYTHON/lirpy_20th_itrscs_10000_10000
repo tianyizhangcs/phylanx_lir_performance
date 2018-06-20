@@ -1,7 +1,7 @@
 Command Line:  10000 0 10000 0 10000
 Reading Data ....
 Slicing ....
-Reading and Slicing done in  48.52283787727356  s 
+Reading and Slicing done in  48.804988622665405  s 
 Starting LIR ....
  result =  [9.39164129e-05 7.68605797e-05 1.17248464e-04 ... 9.34781424e-05
- 8.15981578e-05 8.45518924e-05]  in time = 4413.0828177928925
+ 8.15981578e-05 8.45518924e-05]  in time = 4439.938196659088
