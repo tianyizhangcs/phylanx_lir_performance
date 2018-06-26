@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "This script is used to run lir_csv_phylanx example"
 
-iteration_array=(1 100 1000 5000 10000)
-row_stop_array=(100 1000 2000 3000 4000 5000 6000 7000 8000 9000 10000)
-thr=(1 2 4 6 8 10 12 14 16 18 20)
+iteration_array=(1 1000 5000 10000)
+row_stop_array=(100 2000 4000 6000 8000 10000)
+thr=(1 2 4 8 12 16 20)
 
 #iteration_array=(1 1000)
 #row_stop_array=(100 1000)

@@ -3,9 +3,9 @@
 echo "This script is used to run lir_csv_python example"
 
 
-iteration_array=(10000)
-row_stop_array=(10000)
-thr=(4 6 8 10 12 14 16 18 20)
+iteration_array=(1 1000 5000 10000)
+row_stop_array=(100 2000 4000 6000 8000 10000)
+thr=(4 8 12 16 20)
 
 #iteration_array=(1 1000)
 #row_stop_array=(100 1000)
@@ -17,7 +17,8 @@ for th in "${thr[@]}"
         for rs in "${row_stop_array[@]}"
             do		
             echo "doing ${th}_${it}_${rs}_thitrs"	
-            export OMP_NUM_THREADS=${th}   
+            export OMP_NUM_THREADS=${th}
+            echo $OMP_NUM_THREADS   
             python3 lir_csv_python.py $it 0 $rs 0 $rs >> lirpy_${th}th_itrscs_${it}_${rs}
             echo "done ${th}_${it}_${rs}"	
 	    done
